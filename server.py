@@ -251,8 +251,7 @@ def print_peers(udp_socket):
 def run_peer_table():
 	sleep(3)
 	while True:
-		#print('\033c', end='')
-		print()
+		print('\033c', end='')
 
 		server.host = server.get_my_ip()
 		server.udp_url = server.get_my_url()
